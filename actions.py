@@ -8,7 +8,7 @@ richtungen = ["vorne","links","rechts","hinten"]
 
 aktionen = ["umsehen","aufheben","reden","fliehen","nichts"]
 
-lifepoints = ["heart","heart","heart,heart,heart"]
+lifepoints = ["heart","heart","heart","heart","heart"]
 
 
 
@@ -33,7 +33,7 @@ def print_slowly(str): #angepasste formel aus dem Internet, um Textausgabe zu ve
     for letter in str:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        time.sleep(0.03)
+        time.sleep(0.02)
 
 
     

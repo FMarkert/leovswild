@@ -3,6 +3,8 @@ def chap0():
     from kap1 import chap1
     from actions import print_slowly
 
+    print("\n\n\n")
+
     with open("banner.txt","r") as f:
         banner = f.read()
         print(banner)
@@ -22,20 +24,20 @@ def chap0():
 
     spieler = input("Mein Name lautet: ")
 
-    print_slowly(f"\nHallo {spieler}, schön dich kennenzulernen!\n")
+    print_slowly(f"\nHallo {spieler}, schön dich kennenzulernen!\n\n")
 
-    print_slowly("\nNun kommen wir zu deiner Charakterklasse: \nWelche Klasse würdest du gerne spielen?\nZur Auswahl stehen Paladin, Magier, Schurke, Bogenschütze, Barbar, Kleriker, Samurai\n")
+    print_slowly("\nNun kommen wir zu deiner Charakterklasse: \nWelche Klasse würdest du gerne spielen?\n\nZur Auswahl stehen Paladin, Magier, Schurke, Bogenschütze, Barbar, Kleriker, Samurai\n\n")
 
     klasse = input("Ich wähle als meine Charakterklasse: ")
 
     print_slowly(f"\nOha! Du willst also ein {klasse} sein... Eine sehr gute Wahl!\n")
 
-    print_slowly(f"\nUnd mit welcher Waffe soll dein {klasse} das Spiel beginnen? \nDu hast die Wahl zwischen Schwert und Schild, einem Dolch, einem Kurzbogen, einer Axt, einem Zauberstab oder einem Katana\n")
+    print_slowly(f"\nUnd mit welcher Waffe soll dein {klasse} das Spiel beginnen? \n\nDu hast die Wahl zwischen Schwert und Schild, einem Dolch, einem Kurzbogen, einer Axt, einem Zauberstab oder einem Katana\n")
 
     waffe = input("Ich entscheide mich hierfür: ")
 
     print_slowly(f"\nDu bist also {spieler} und möchtest das Spiel als {klasse} mit {waffe} beginnen.\n\nGaaaaaaaanz großes Sorry an dieser Stelle aber daraus wird nichts....\n\n")
 
-    print_slowly("\nDu schlüpfst stattdessen in die Rolle von Leo, ein kräftiger Mann aus Russland mit einem Herzen aus Gold.\nUnd dein Abenteuer beginnt genau hier:\n")
+    print_slowly("\n\nDu schlüpfst stattdessen in die Rolle von Leo, ein kräftiger Mann aus Russland mit einem Herzen aus Gold.\nUnd dein Abenteuer beginnt genau hier:\n\n")
 
     chap1()
